@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt 1 - Automatizovaný systém členskej sekcie</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #0a0f1c;
+            color: white;
+            font-size: 28px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .gallery img:nth-child(-n+3) {
+            width: calc(33.33% - 10px);
+            max-width: 300px;
+            height: auto;
+        }
+        .gallery img:nth-child(4) {
+            width: 40%;
+            max-width: 400px;
+            height: auto;
+        }
+        .gallery img:nth-child(5) {
+            width: 58%;
+            max-width: 580px;
+            height: auto;
+        }
+        .description {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #0a0f1c;
+            color: white;
+            border-radius: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Projekt 2</h1>
+        <p>Responzívny dopytový katalóg s výpočtom ceny (HTML+CSS+JAVASCRIPT+PHP)</p>
+        
+        <div class="description">
+            <h2>Responzívny cenový katalóg a nezáväzná objednávka</h2>
+            <p>1. Používateľ si vyberie produkty z katalógu.</p>
+            <p>2. Dynamický systém automaticky vypočíta celkovú cenu.</p>
+            <p>3. Po vyplnení formulára odošle nezáväznú objednávku.</p>
+            <p>4. Administrátor dostane e-mail s podrobnosťami objednávky.</p>
+            <p>✅ Responzívne riešenie vhodné pre online katalógy a e-shopy.</p>
+        </div>
+        
+        <div class="gallery">
+            <img src="jednotka2.png" alt="Obrázok 1">
+            <img src="dvojka2.png" alt="Obrázok 2">
+            <img src="trojka2.png" alt="Obrázok 3">
+            <img src="štvorka2.png" alt="Obrázok 4">
+            <img src="patka2.png" alt="Obrázok 5">
+        </div>
+        
+        <a href="index.html" class="btn">Späť na hlavnú stránku</a>
+    </div>
+</body>
+</html>
