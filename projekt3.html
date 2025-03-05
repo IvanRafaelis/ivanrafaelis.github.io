@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt 3 - Automatizovaný systém hromadného odosielania mailov</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #0a0f1c;
+            color: white;
+            font-size: 28px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.4);
+        }
+        .description {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #0a0f1c;
+            color: white;
+            border-radius: 10px;
+            max-width: 950px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Projekt 3</h1>
+        <p>Automatizovaný systém hromadného odosielania mailov (python)</p>
+        
+        <div class="description">
+            <h2>Ako skript funguje?</h2>
+            <p>1. Skript načíta údaje zo súboru Excel, ktorý obsahuje názvy firiem a e-maily.</p>
+            <p>2. Na základe týchto údajov skript automaticky vytvorí e-mail pre každú firmu.</p>
+            <p>3. Skript sa pripojí k SMTP serveru Gmailu a prihlási sa pomocou e-mailu a hesla aplikácie.</p>
+            <p>4. Skript odošle personalizované e-maily na každý zadaný e-mail.</p>
+            <p>✅ Ideálne riešenie pre hromadné zasielanie personalizovaných správ rôznym príjemcom z Excel súboru.</p>
+        </div>
+        
+
+        <div class="gallery">
+            <img src="jednotka3.png" alt="Obrázok 1">
+            <img src="dvojka3.png" alt="Obrázok 2">
+            <img src="trojka3.png" alt="Obrázok 3">
+        </div>
+        
+        <a href="index.html" class="btn">Späť na hlavnú stránku</a>
+    </div>
+</body>
+</html>
