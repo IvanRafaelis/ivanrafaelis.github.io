@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moje Portfólio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,36 +26,39 @@
 
     <section id="o-mne">
         <div class="container">
-            <h2>O mne</h2>
-            <p>Ahoj! Som Ivan, študent a web developer.</p>
-            <p>Rád tvorím moderné a funkčné weby. Zaujímam sa o technológie, kybernetickú bezpečnosť a dizajn.</p>
-            <p>Ak máš nápad na projekt, neváhaj ma kontaktovať!</p>
+            <div class="about-card">
+                <h2>O mne</h2>
+                <p>Ahoj! Som <strong>Ivan</strong>, študent a web developer.</p>
+                <p>Rád tvorím moderné a funkčné weby. Zaujímam sa o <strong>technológie</strong>, <strong>kybernetickú bezpečnosť</strong> a <strong>dizajn</strong>.</p>
+                <p>Ak máš nápad na projekt, <span class="highlight">neváhaj ma kontaktovať!</span></p>
+            </div>
         </div>
     </section>
+    
 
     <section id="skills">
-        <h2>Moje zručnosti</h2>
-
-        <div class="progress-bar-container">
-            <div class="progress-bar html-bar">HTML - 100%</div>
-        </div>
-        <div class="progress-bar-container">
-            <div class="progress-bar css-bar">CSS - 90%</div>
-        </div>
-        <div class="progress-bar-container">
-            <div class="progress-bar php-bar">PHP - 70%</div>
-        </div>
-        <div class="progress-bar-container">
-            <div class="progress-bar js-bar">JavaScript - 50%</div>
-        </div>
-        <div class="progress-bar-container">
-            <div class="progress-bar cyber-bar">Kyberbezpečnosť - 40%</div>
+        <div class="progress-wrapper">
+            <div class="progress-bar-container">
+                <div class="progress-bar html-bar">HTML - 100%</div>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar css-bar">CSS - 90%</div>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar php-bar">PHP - 70%</div>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar js-bar">JavaScript - 50%</div>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar cyber-bar">Kyberbezpečnosť - 40%</div>
+            </div>
         </div>
     </section>
+    
 
     <section id="projekty">
         <div class="container">
-            <h2>Moje projekty</h2>
             <div class="projects">
                 <div class="project">
                     <h3>Projekt 1</h3>
@@ -80,12 +84,20 @@
             <h2>Kontakt</h2>
             <p>Napíš mi alebo ma sleduj na sociálnych sieťach:</p>
             <div class="social-icons">
-                <a href="https://github.com/IvanRafaelis" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/ivanrafaelis/" target="_blank">LinkedIn</a>
-                <a href="mailto:tvojemail@gmail.com">Email</a>
+                <a href="https://github.com/ivanrafaelis" target="_blank" class="icon github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/ivanrafaelis" target="_blank" class="icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:ivanrafaelis07@gmail.com" class="icon email">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
     </section>
+    
+    
 
     <footer>
         <p>© 2025 Ivan Rafaelis | Moje Portfólio</p>
