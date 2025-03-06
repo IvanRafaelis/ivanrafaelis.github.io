@@ -211,23 +211,39 @@ h2 {
 }
 
 
-/* Projekty */
 .projects {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 25px;
     flex-wrap: wrap;
     margin-top: 20px;
+    width: 100%; 
 }
 
 .project {
     background: #1b263b;
     padding: 25px;
-    width: 320px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex: 1 1 calc(33.33% - 25px); 
+    box-sizing: border-box;
+    min-width: 300px; 
 }
+
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 calc(50% - 25px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        flex: 1 1 100%; 
+    }
+}
+
+
 
 .project:hover {
     transform: translateY(-8px);
@@ -546,3 +562,51 @@ p {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
+
+
+#fun-fact {
+    background-color: #ff1744; /* Výstražná červená farba */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    position: relative;
+    color: #fff;
+    animation: color-flash 3s ease-in-out infinite; /* Jemné blikajúce pozadie */
+}
+
+#fun-fact h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+#fun-fact p {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+#fun-fact p:hover {
+    transform: scale(1.05);
+    color: #ffeb3b; /* Žltá farba pri hover */
+}
+
+@keyframes color-flash {
+    0% {
+        background-color: #ff1744; /* Počiatočná červená */
+    }
+    50% {
+        background-color: #f44336; /* Jemná tmavočervená */
+    }
+    100% {
+        background-color: #ff1744; /* Opätovná červená */
+    }
+}
+
