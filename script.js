@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const texts = [
         "Chceš vlastnú aplikáciu alebo webový projekt? Napíš mi a vymyslíme riešenie!",
         "Ahoj! Som Ivan a programujem v HTML, CSS, PHP a Jave.",
+        "Som študent a vo voľnom čase (ktorého je málo) programátor a web developer",
         "Kód je môj jazyk. Tvorím čisté a efektívne riešenia.",
         "Frontend aj backend? Žiadny problém!",
         "Chceš vlastnú aplikáciu alebo webový projekt? Napíš mi a vymyslíme riešenie!",
