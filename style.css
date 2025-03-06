@@ -43,6 +43,7 @@ header h1 {
 
 header p {
     font-size: 1.2em;
+    color: rgb(255, 255, 255)
 }
 
 /* Navigácia */
@@ -188,7 +189,7 @@ h2 {
     font-size: 2.8em;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #1d3557;
+    color: #bfcde0f5;
 }
 
 /* Zvýraznenie textu */
@@ -262,7 +263,7 @@ h2 {
     background: #e76f51;
     transform: scale(1.05);
 }
- 
+
 
 
 /* Pätička */
@@ -286,7 +287,7 @@ h2 {
     font-size: 2.8em;
     font-weight: 700;
     margin-bottom: 30px;
-    color: #1d3557;
+    color: #b0bcce;
 }
 
 /* Obal pre progress bary */
@@ -299,8 +300,8 @@ h2 {
 
 /* Pre väčšie obrazovky */
 .progress-bar-container {
-    width: 900px;  
-    max-width: 900px;  
+    width: 900px;
+    max-width: 900px;
     background: #e0e0e0;
     border-radius: 25px;
     padding: 8px;
@@ -308,7 +309,7 @@ h2 {
 }
 
 .progress-bar {
-    height: 40px;  
+    height: 40px;
     line-height: 40px;
     font-size: 1.2em;
     border-radius: 25px;
@@ -330,24 +331,75 @@ h2 {
     font-size: 1.2em;
     border-radius: 25px;
     width: 0%;
-    min-width: 50px;  /* Zabezpečí, že progress bar nie je úplne neviditeľný */
-    animation-duration: 2s;
+    min-width: 50px;
+    /* Zabezpečí, že progress bar nie je úplne neviditeľný */
+    animation-duration: 4s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
 /* 🔹 Animácie */
-@keyframes htmlProgress { from { width: 0%; } to { width: 100%; } }
-@keyframes cssProgress { from { width: 0%; } to { width: 90%; } }
-@keyframes phpProgress { from { width: 0%; } to { width: 70%; } }
-@keyframes jsProgress { from { width: 0%; } to { width: 50%; } }
-@keyframes cyberProgress { from { width: 0%; } to { width: 40%; } }
+@keyframes htmlProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes cssProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+@keyframes phpProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+@keyframes jsProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+@keyframes cyberProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%;
+    }
+}
 
-.html-bar { background: linear-gradient(90deg, #4caf50, #66bb6a); animation-name: htmlProgress; }
-.css-bar { background: linear-gradient(90deg, #2196f3, #42a5f5); animation-name: cssProgress; }
-.php-bar { background: linear-gradient(90deg, #ff9800, #ffb74d); animation-name: phpProgress; }
-.js-bar { background: linear-gradient(90deg, #f44336, #e57373); animation-name: jsProgress; }
-.cyber-bar { background: linear-gradient(90deg, #6a0dad, #9c27b0); animation-name: cyberProgress; }
+.html-bar {
+    background: linear-gradient(90deg, #4caf50, #66bb6a);
+    animation-name: htmlProgress;
+}
+.css-bar {
+    background: linear-gradient(90deg, #2196f3, #42a5f5);
+    animation-name: cssProgress;
+}
+.php-bar {
+    background: linear-gradient(90deg, #ff9800, #ffb74d);
+    animation-name: phpProgress;
+}
+.js-bar {
+    background: linear-gradient(90deg, #f44336, #e57373);
+    animation-name: jsProgress;
+}
+.cyber-bar {
+    background: linear-gradient(90deg, #6a0dad, #9c27b0);
+    animation-name: cyberProgress;
+}
 
 /* 🔹 Media query pre mobilné zariadenia */
 @media (max-width: 768px) {
@@ -361,7 +413,8 @@ h2 {
         height: 30px;
         line-height: 30px;
         font-size: 1em;
-        min-width: 50px; /* Zabezpečí, že progress bar nie je neviditeľný na mobile */
+        min-width: 50px;
+        /* Zabezpečí, že progress bar nie je neviditeľný na mobile */
     }
 }
 
@@ -375,7 +428,7 @@ h2 {
 
 h2 {
     font-size: 2rem;
-    color: #333;
+    color: #b0bcce;
 }
 
 p {
@@ -423,3 +476,73 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.animated-text {
+    font-size: 24px;
+    font-weight: bold;
+    height: 30px;
+    /* Výška textu */
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.animated-text span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: changeText 6s infinite;
+}
+
+.animated-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.animated-text span:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.animated-text span:nth-child(3) {
+    animation-delay: 4s;
+}
+
+@keyframes changeText {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    40% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#typing-text {
+    font-size: 24px;  /* Zväčší text */
+    color: white;     /* Zmení farbu na bielu */
+    font-weight: bold; /* Urobí text hrubším */
+    text-align: center; /* Zarovná text do stredu */
+    margin-top: 10px; /* Pridá odstup od nadpisu */
+}
+#typing-text::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
