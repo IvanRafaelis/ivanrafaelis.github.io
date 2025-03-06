@@ -16,10 +16,15 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function () {
     const textElement = document.getElementById("typing-text");
     const texts = [
-        "Ahoj! Som Ivan, študent a vo voľnom čase web developer.",
-        "Tvorím moderné a funkčné weby.",
-        "Zaujímam sa o technológie a kybernetickú bezpečnosť.",
-        "Ak máš nápad na projekt, neváhaj ma kontaktovať!"
+        "Chceš vlastnú aplikáciu alebo webový projekt? Napíš mi a vymyslíme riešenie!",
+        "Ahoj! Som Ivan a programujem v HTML, CSS, PHP a Jave.",
+        "Kód je môj jazyk. Tvorím čisté a efektívne riešenia.",
+        "Frontend aj backend? Žiadny problém!",
+        "Chceš vlastnú aplikáciu alebo webový projekt? Napíš mi a vymyslíme riešenie!",
+        "Od statických stránok po dynamické aplikácie.",
+        "Programovanie je umenie. Každý riadok kódu má svoj význam.",
+        "Čistý kód, efektívne riešenia, moderné technológie – to je môj štýl.",
+        "Chceš vlastnú aplikáciu alebo webový projekt? Napíš mi a vymyslíme riešenie!"
     ];
     
     let textIndex = 0;
@@ -48,3 +53,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
