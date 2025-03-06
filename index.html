@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
             <h1>Moje Portfólio</h1>
-            <p>Študent | Web Developer | Cybersecurity</p>
+            <h2 class="animated-text">
+                <span>Web Developer</span>
+                <span>Programátor</span>
+                <span>Cybersecurity nadšenec</span>
+            </h2>
+
         </div>
     </header>
 
@@ -25,16 +32,10 @@
     </nav>
 
     <section id="o-mne">
-        <div class="container">
-            <div class="about-card">
-                <h2>O mne</h2>
-                <p>Ahoj! Som <strong>Ivan</strong>, študent a vo voľnom čase web developer a programátor.</p>
-                <p>Rád tvorím moderné a funkčné weby. Zaujímam sa o <strong>technológie</strong>, <strong>kybernetickú bezpečnosť</strong> a <strong>cudzie jazyky</strong>.</p>
-                <p>Ak máš nápad na projekt, <span class="highlight">neváhaj ma kontaktovať!</span></p>
-            </div>
-        </div>
+        <p id="typing-text"></p>
+
     </section>
-    
+
 
     <section id="skills">
         <div class="progress-wrapper">
@@ -55,7 +56,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <section id="projekty">
         <div class="container">
@@ -74,6 +75,11 @@
                     <h3>Projekt 3</h3>
                     <p>Automatizovaný systém hromadného odosielania mailov</p>
                     <a href="projekt3.html" class="btn">Zobraziť viac</a>
+                </div>
+                <div class="project">
+                    <h3>Projekt 4</h3>
+                    <p>Responzívny dopytový katalóg</p>
+                    <a href="projekt2.html" class="btn">Zobraziť viac</a>
                 </div>
             </div>
         </div>
@@ -96,8 +102,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+
 
     <footer>
         <p>© 2025 Ivan Rafaelis | Moje Portfólio</p>
@@ -105,4 +111,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
