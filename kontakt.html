@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Moje Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #0a0f1c;
+            color: white;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #1c2331;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        h1 {
+            margin-bottom: 15px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            text-align: center;
+            display: block;
+        }
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border 0.3s ease-in-out;
+            background-color: #fff;
+            color: #333;
+        }
+        input:focus,
+        textarea:focus {
+            border-color: #f0a500;
+            outline: none;
+        }
+        button {
+            background: #f0a500;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+        }
+        button:hover {
+            background: #e08d00;
+            transform: scale(1.05);
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            background-color: #f0a500;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+        }
+        .btn:hover {
+            background-color: #e08d00;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+	<div class="wheel"></div>
+	<div class="hamster">
+		<div class="hamster__body">
+			<div class="hamster__head">
+				<div class="hamster__ear"></div>
+				<div class="hamster__eye"></div>
+				<div class="hamster__nose"></div>
+			</div>
+			<div class="hamster__limb hamster__limb--fr"></div>
+			<div class="hamster__limb hamster__limb--fl"></div>
+			<div class="hamster__limb hamster__limb--br"></div>
+			<div class="hamster__limb hamster__limb--bl"></div>
+			<div class="hamster__tail"></div>
+		</div>
+	</div>
+	<div class="spoke"></div>
+</div>
+<body>
+    <div class="container">
+        <h1>Kontakt</h1>
+        <p>Máte otázky? Neváhajte ma kontaktovať cez formulár nižšie.</p>
+        <form action="https://formspree.io/f/xpwpalzk" method="POST">
+            <label>
+                Váš e-mail:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Vaša správa:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Odoslať</button>
+        </form>
+        <a href="index.html" class="btn">Späť na hlavnú stránku</a>
+    </div>
+
+
+
+</body>
+</html>
