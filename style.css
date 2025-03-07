@@ -3,27 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
-}
-
-/* Tmavý moderný vzhľad */
-body {
+  }
+  
+  /* Tmavý moderný vzhľad */
+  body {
     background-color: #0a0f1c;
     color: #ffffff;
     text-align: center;
-}
-
-/* Základný container */
-.container {
+  }
+  
+  /* Základný container */
+  .container {
     width: 85%;
     max-width: 1100px;
     margin: auto;
     padding: 60px 20px;
-}
-
-/* Hlavička */
-header {
+  }
+  
+  /* Hlavička */
+  header {
     background: linear-gradient(135deg, #1d3557, #457b9d);
     color: white;
     padding: 60px 15px;
@@ -34,20 +34,20 @@ header {
     position: relative;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     font-size: 3em;
     letter-spacing: 2px;
-}
-
-header p {
+  }
+  
+  header p {
     font-size: 1.2em;
-    color: rgb(255, 255, 255)
-}
-
-/* Navigácia */
-nav {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Navigácia */
+  nav {
     background: rgba(22, 33, 62, 0.95);
     backdrop-filter: blur(10px);
     padding: 15px 10px;
@@ -56,9 +56,9 @@ nav {
     top: 0;
     z-index: 1000;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -66,13 +66,13 @@ nav ul {
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: #f4a261;
     text-decoration: none;
     font-size: 1.1em;
@@ -81,99 +81,96 @@ nav ul li a {
     padding: 8px 15px;
     border-radius: 8px;
     position: relative;
-}
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     color: white;
     background: #e76f51;
     box-shadow: 0px 5px 15px rgba(231, 111, 81, 0.4);
-}
-
-/* Responzivita pre menšie obrazovky */
-@media (max-width: 768px) {
+  }
+  
+  /* Responzivita pre menšie obrazovky */
+  @media (max-width: 768px) {
     header {
-        padding: 40px 10px;
+      padding: 40px 10px;
     }
-
+  
     header h1 {
-        font-size: 2.5em;
+      font-size: 2.5em;
     }
-
+  
     header p {
-        font-size: 1em;
+      font-size: 1em;
     }
-
+  
     nav ul {
-        flex-direction: column;
-        gap: 10px;
+      flex-direction: column;
+      gap: 10px;
     }
-
+  
     nav ul li a {
-        display: block;
-        padding: 10px;
-        font-size: 1em;
+      display: block;
+      padding: 10px;
+      font-size: 1em;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     header {
-        padding: 30px 5px;
+      padding: 30px 5px;
     }
-
+  
     header h1 {
-        font-size: 2em;
+      font-size: 2em;
     }
-
+  
     header p {
-        font-size: 0.9em;
+      font-size: 0.9em;
     }
-
+  
     nav {
-        padding: 10px;
+      padding: 10px;
     }
-
+  
     nav ul {
-        gap: 5px;
+      gap: 5px;
     }
-
+  
     nav ul li a {
-        font-size: 0.9em;
-        padding: 8px;
+      font-size: 0.9em;
+      padding: 8px;
     }
-}
-
-
-/* Animácia fadeIn */
-@keyframes fadeIn {
+  }
+  
+  /* Animácia fadeIn */
+  @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: translateY(-30px);
+      opacity: 0;
+      transform: translateY(-30px);
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
-}
-
-
-
-/* Sekcie */
-section {
+  }
+  
+  /* Sekcie */
+  section {
     padding: 80px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #0a0f1c;
-}
-
-/* Kontajner */
-.container {
+  }
+  
+  /* Kontajner */
+  .container {
     max-width: 800px;
     width: 90%;
-}
-
-/* Kartový efekt pre sekciu "O mne" */
-.about-card {
+  }
+  
+  /* Kartový efekt pre sekciu "O mne" */
+  .about-card {
     background: #0a0f1c;
     padding: 40px;
     border-radius: 15px;
@@ -182,87 +179,84 @@ section {
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 1s ease-out forwards;
-}
-
-/* Nadpisy sekcií */
-h2 {
+  }
+  
+  /* Nadpisy sekcií */
+  h2 {
     font-size: 2.8em;
     font-weight: 700;
     margin-bottom: 20px;
     color: #bfcde0f5;
-}
-
-/* Zvýraznenie textu */
-.highlight {
+  }
+  
+  /* Zvýraznenie textu */
+  .highlight {
     color: #e76f51;
     font-weight: bold;
-}
-
-/* Animácia fade-in pri scrollovaní */
-@keyframes fadeInUp {
+  }
+  
+  /* Animácia fade-in pri scrollovaní */
+  @keyframes fadeInUp {
     0% {
-        opacity: 0;
-        transform: translateY(50px);
+      opacity: 0;
+      transform: translateY(50px);
     }
     100% {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
-}
-
-
-.projects {
+  }
+  
+  .projects {
     display: flex;
     justify-content: space-between;
     gap: 25px;
     flex-wrap: wrap;
     margin-top: 20px;
-    width: 100%; 
-}
-
-.project {
+    width: 100%;
+  }
+  
+  .project {
     background: #1b263b;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    flex: 1 1 calc(33.33% - 25px); 
+    flex: 1 1 calc(33.33% - 25px);
     box-sizing: border-box;
-    min-width: 300px; 
-}
-
-@media (max-width: 768px) {
+    min-width: 300px;
+  }
+  
+  @media (max-width: 768px) {
     .project {
-        flex: 1 1 calc(50% - 25px); 
+      flex: 1 1 calc(50% - 25px);
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .project {
-        flex: 1 1 100%; 
+      flex: 1 1 100%;
     }
-}
-
-
-
-.project:hover {
+  }
+  
+  .project:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-.project h3 {
+  }
+  
+  .project h3 {
     font-size: 1.7em;
     margin-bottom: 10px;
     color: #f4a261;
-}
-
-.project p {
+  }
+  
+  .project p {
     font-size: 1.1em;
     opacity: 0.9;
-}
-
-/* Tlačidlá */
-.btn {
+  }
+  
+  /* Tlačidlá */
+  .btn {
     display: inline-block;
     background: #f4a261;
     color: #fff;
@@ -273,75 +267,73 @@ h2 {
     border-radius: 8px;
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     background: #e76f51;
     transform: scale(1.05);
-}
-
-
-
-/* Pätička */
-footer {
+  }
+  
+  /* Pätička */
+  footer {
     background-color: #16213e;
     color: #8b949e;
     padding: 20px;
     font-size: 0.9em;
     border-top: 2px solid #1d3557;
-}
-
-/* Sekcia */
-#skills {
+  }
+  
+  /* Sekcia */
+  #skills {
     padding: 60px 20px;
     text-align: center;
     background: #f8f9fa;
-}
-
-/* Nadpis */
-h2 {
+  }
+  
+  /* Nadpis */
+  h2 {
     font-size: 2.8em;
     font-weight: 700;
     margin-bottom: 30px;
     color: #b0bcce;
-}
-
-/* Obal pre progress bary */
-.progress-wrapper {
+  }
+  
+  /* Obal pre progress bary */
+  .progress-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-}
-
-/* Pre väčšie obrazovky */
-.progress-bar-container {
+  }
+  
+  /* Pre väčšie obrazovky */
+  .progress-bar-container {
     width: 900px;
     max-width: 900px;
     background: #e0e0e0;
     border-radius: 25px;
     padding: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.progress-bar {
+  }
+  
+  .progress-bar {
     height: 40px;
     line-height: 40px;
     font-size: 1.2em;
     border-radius: 25px;
-}
-
-/* Štýly pre progress bary */
-.progress-bar-container {
+  }
+  
+  /* Štýly pre progress bary */
+  .progress-bar-container {
     width: 900px;
     max-width: 900px;
     background: #e0e0e0;
     border-radius: 25px;
     padding: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.progress-bar {
+  }
+  
+  .progress-bar {
     height: 40px;
     line-height: 40px;
     font-size: 1.2em;
@@ -352,115 +344,114 @@ h2 {
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-}
-
-/* 🔹 Animácie */
-@keyframes htmlProgress {
+  }
+  
+  /* 🔹 Animácie */
+  @keyframes htmlProgress {
     from {
-        width: 0%;
+      width: 0%;
     }
     to {
-        width: 100%;
+      width: 100%;
     }
-}
-@keyframes cssProgress {
+  }
+  @keyframes cssProgress {
     from {
-        width: 0%;
+      width: 0%;
     }
     to {
-        width: 90%;
+      width: 90%;
     }
-}
-@keyframes phpProgress {
+  }
+  @keyframes phpProgress {
     from {
-        width: 0%;
+      width: 0%;
     }
     to {
-        width: 70%;
+      width: 70%;
     }
-}
-@keyframes jsProgress {
+  }
+  @keyframes jsProgress {
     from {
-        width: 0%;
+      width: 0%;
     }
     to {
-        width: 50%;
+      width: 50%;
     }
-}
-@keyframes cyberProgress {
+  }
+  @keyframes cyberProgress {
     from {
-        width: 0%;
+      width: 0%;
     }
     to {
-        width: 40%;
+      width: 40%;
     }
-}
-
-.html-bar {
+  }
+  
+  .html-bar {
     background: linear-gradient(90deg, #4caf50, #66bb6a);
     animation-name: htmlProgress;
-}
-.css-bar {
+  }
+  .css-bar {
     background: linear-gradient(90deg, #2196f3, #42a5f5);
     animation-name: cssProgress;
-}
-.php-bar {
+  }
+  .php-bar {
     background: linear-gradient(90deg, #ff9800, #ffb74d);
     animation-name: phpProgress;
-}
-.js-bar {
+  }
+  .js-bar {
     background: linear-gradient(90deg, #f44336, #e57373);
     animation-name: jsProgress;
-}
-.cyber-bar {
+  }
+  .cyber-bar {
     background: linear-gradient(90deg, #6a0dad, #9c27b0);
     animation-name: cyberProgress;
-}
-
-/* 🔹 Media query pre mobilné zariadenia */
-@media (max-width: 768px) {
+  }
+  
+  /* 🔹 Media query pre mobilné zariadenia */
+  @media (max-width: 768px) {
     .progress-bar-container {
-        width: 400px;
-        max-width: 450px;
-        padding: 5px;
+      width: 400px;
+      max-width: 450px;
+      padding: 5px;
     }
-
+  
     .progress-bar {
-        height: 30px;
-        line-height: 30px;
-        font-size: 1em;
-        min-width: 50px;
-        /* Zabezpečí, že progress bar nie je neviditeľný na mobile */
+      height: 30px;
+      line-height: 30px;
+      font-size: 1em;
+      min-width: 50px;
+      /* Zabezpečí, že progress bar nie je neviditeľný na mobile */
     }
-}
-
-
-/* Moderný kontakt sekcia */
-#kontakt {
+  }
+  
+  /* Moderný kontakt sekcia */
+  #kontakt {
     text-align: center;
     padding: 60px 20px;
     background: #f8f9fa;
-}
-
-h2 {
+  }
+  
+  h2 {
     font-size: 2rem;
     color: #b0bcce;
-}
-
-p {
+  }
+  
+  p {
     font-size: 1.2rem;
     color: #555;
-}
-
-/* Sociálne ikony */
-.social-icons {
+  }
+  
+  /* Sociálne ikony */
+  .social-icons {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-.social-icons a {
+  }
+  
+  .social-icons a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -471,34 +462,33 @@ p {
     color: white;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Farby pre jednotlivé ikony */
-.github {
+  }
+  
+  /* Farby pre jednotlivé ikony */
+  .github {
     background: #333;
-}
-
-.linkedin {
+  }
+  
+  .linkedin {
     background: #0077b5;
-}
-
-.email {
+  }
+  
+  .email {
     background: #e76f51;
-}
-
-/* Nová Instagram farba */
-.instagram {
-    background: #E4405F;
-}
-
-/* Efekty pri hoveri */
-.social-icons a:hover {
+  }
+  
+  /* Nová Instagram farba */
+  .instagram {
+    background: #e4405f;
+  }
+  
+  /* Efekty pri hoveri */
+  .social-icons a:hover {
     transform: scale(1.1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-.animated-text {
+  }
+  
+  .animated-text {
     font-size: 24px;
     font-weight: bold;
     height: 30px;
@@ -506,83 +496,86 @@ p {
     overflow: hidden;
     position: relative;
     text-align: center;
-}
-
-.animated-text span {
+  }
+  
+  .animated-text span {
     display: block;
     position: absolute;
     width: 100%;
     opacity: 0;
     animation: changeText 6s infinite;
-}
-
-.animated-text span:nth-child(1) {
+  }
+  
+  .animated-text span:nth-child(1) {
     animation-delay: 0s;
-}
-
-.animated-text span:nth-child(2) {
+  }
+  
+  .animated-text span:nth-child(2) {
     animation-delay: 2s;
-}
-
-.animated-text span:nth-child(3) {
+  }
+  
+  .animated-text span:nth-child(3) {
     animation-delay: 4s;
-}
-
-@keyframes changeText {
+  }
+  
+  @keyframes changeText {
     0% {
-        opacity: 0;
-        transform: translateY(100%);
+      opacity: 0;
+      transform: translateY(100%);
     }
     10% {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
     30% {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
     40% {
-        opacity: 0;
-        transform: translateY(-100%);
+      opacity: 0;
+      transform: translateY(-100%);
     }
     100% {
-        opacity: 0;
+      opacity: 0;
     }
-}
-
-
-#typing-text {
-    font-size: 24px;  /* Zväčší text */
-    color: white;     /* Zmení farbu na bielu */
+  }
+  
+  #typing-text {
+    font-size: 24px; /* Zväčší text */
+    color: white; /* Zmení farbu na bielu */
     font-weight: bold; /* Urobí text hrubším */
     text-align: center; /* Zarovná text do stredu */
     margin-top: 10px; /* Pridá odstup od nadpisu */
-}
-#typing-text::after {
+  }
+  #typing-text::after {
     content: "|";
     display: inline-block;
     animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
-
-
-#fun-fact {
+  }
+  
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  #fun-fact {
     background-color: #ff1744; /* Výstražná červená farba */
     padding: 60px 20px;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     position: relative;
     color: #fff;
     animation: color-flash 3s ease-in-out infinite; /* Jemné blikajúce pozadie */
-}
-
-#fun-fact h2 {
+  }
+  
+  #fun-fact h2 {
     font-size: 40px;
     color: #fff;
     margin-bottom: 25px;
@@ -590,29 +583,310 @@ p {
     text-transform: uppercase;
     letter-spacing: 5px;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
-}
-
-#fun-fact p {
+  }
+  
+  #fun-fact p {
     font-size: 22px;
     color: #fff;
-    font-family: 'Arial', sans-serif;
+    font-family: "Arial", sans-serif;
     transition: transform 0.3s ease-in-out, color 0.3s ease;
-}
-
-#fun-fact p:hover {
+  }
+  
+  #fun-fact p:hover {
     transform: scale(1.05);
     color: #ffeb3b; /* Žltá farba pri hover */
-}
-
-@keyframes color-flash {
+  }
+  
+  @keyframes color-flash {
     0% {
-        background-color: #ff1744; /* Počiatočná červená */
+      background-color: #ff1744; /* Počiatočná červená */
     }
     50% {
-        background-color: #f44336; /* Jemná tmavočervená */
+      background-color: #f44336; /* Jemná tmavočervená */
     }
     100% {
-        background-color: #ff1744; /* Opätovná červená */
+      background-color: #ff1744; /* Opätovná červená */
     }
+  }
+  
+
+
+
+
+
+
+
+
+  /* From Uiverse.io by Nawsome */ 
+.wheel-and-hamster {
+  --dur: 1s;
+  position: relative;
+  width: 12em;
+  height: 12em;
+  font-size: 14px;
 }
 
+.wheel,
+.hamster,
+.hamster div,
+.spoke {
+  position: absolute;
+}
+
+.wheel,
+.spoke {
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wheel {
+  background: radial-gradient(100% 100% at center,hsla(0,0%,60%,0) 47.8%,hsl(0,0%,60%) 48%);
+  z-index: 2;
+}
+
+.hamster {
+  animation: hamster var(--dur) ease-in-out infinite;
+  top: 50%;
+  left: calc(50% - 3.5em);
+  width: 7em;
+  height: 3.75em;
+  transform: rotate(4deg) translate(-0.8em,1.85em);
+  transform-origin: 50% 0;
+  z-index: 1;
+}
+
+.hamster__head {
+  animation: hamsterHead var(--dur) ease-in-out infinite;
+  background: hsl(30,90%,55%);
+  border-radius: 70% 30% 0 100% / 40% 25% 25% 60%;
+  box-shadow: 0 -0.25em 0 hsl(30,90%,80%) inset,
+		0.75em -1.55em 0 hsl(30,90%,90%) inset;
+  top: 0;
+  left: -2em;
+  width: 2.75em;
+  height: 2.5em;
+  transform-origin: 100% 50%;
+}
+
+.hamster__ear {
+  animation: hamsterEar var(--dur) ease-in-out infinite;
+  background: hsl(0,90%,85%);
+  border-radius: 50%;
+  box-shadow: -0.25em 0 hsl(30,90%,55%) inset;
+  top: -0.25em;
+  right: -0.25em;
+  width: 0.75em;
+  height: 0.75em;
+  transform-origin: 50% 75%;
+}
+
+.hamster__eye {
+  animation: hamsterEye var(--dur) linear infinite;
+  background-color: hsl(0,0%,0%);
+  border-radius: 50%;
+  top: 0.375em;
+  left: 1.25em;
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.hamster__nose {
+  background: hsl(0,90%,75%);
+  border-radius: 35% 65% 85% 15% / 70% 50% 50% 30%;
+  top: 0.75em;
+  left: 0;
+  width: 0.2em;
+  height: 0.25em;
+}
+
+.hamster__body {
+  animation: hamsterBody var(--dur) ease-in-out infinite;
+  background: hsl(30,90%,90%);
+  border-radius: 50% 30% 50% 30% / 15% 60% 40% 40%;
+  box-shadow: 0.1em 0.75em 0 hsl(30,90%,55%) inset,
+		0.15em -0.5em 0 hsl(30,90%,80%) inset;
+  top: 0.25em;
+  left: 2em;
+  width: 4.5em;
+  height: 3em;
+  transform-origin: 17% 50%;
+  transform-style: preserve-3d;
+}
+
+.hamster__limb--fr,
+.hamster__limb--fl {
+  clip-path: polygon(0 0,100% 0,70% 80%,60% 100%,0% 100%,40% 80%);
+  top: 2em;
+  left: 0.5em;
+  width: 1em;
+  height: 1.5em;
+  transform-origin: 50% 0;
+}
+
+.hamster__limb--fr {
+  animation: hamsterFRLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30,90%,80%) 80%,hsl(0,90%,75%) 80%);
+  transform: rotate(15deg) translateZ(-1px);
+}
+
+.hamster__limb--fl {
+  animation: hamsterFLLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30,90%,90%) 80%,hsl(0,90%,85%) 80%);
+  transform: rotate(15deg);
+}
+
+.hamster__limb--br,
+.hamster__limb--bl {
+  border-radius: 0.75em 0.75em 0 0;
+  clip-path: polygon(0 0,100% 0,100% 30%,70% 90%,70% 100%,30% 100%,40% 90%,0% 30%);
+  top: 1em;
+  left: 2.8em;
+  width: 1.5em;
+  height: 2.5em;
+  transform-origin: 50% 30%;
+}
+
+.hamster__limb--br {
+  animation: hamsterBRLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30,90%,80%) 90%,hsl(0,90%,75%) 90%);
+  transform: rotate(-25deg) translateZ(-1px);
+}
+
+.hamster__limb--bl {
+  animation: hamsterBLLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30,90%,90%) 90%,hsl(0,90%,85%) 90%);
+  transform: rotate(-25deg);
+}
+
+.hamster__tail {
+  animation: hamsterTail var(--dur) linear infinite;
+  background: hsl(0,90%,85%);
+  border-radius: 0.25em 50% 50% 0.25em;
+  box-shadow: 0 -0.2em 0 hsl(0,90%,75%) inset;
+  top: 1.5em;
+  right: -0.5em;
+  width: 1em;
+  height: 0.5em;
+  transform: rotate(30deg) translateZ(-1px);
+  transform-origin: 0.25em 0.25em;
+}
+
+.spoke {
+  animation: spoke var(--dur) linear infinite;
+  background: radial-gradient(100% 100% at center,hsl(0,0%,60%) 4.8%,hsla(0,0%,60%,0) 5%),
+		linear-gradient(hsla(0,0%,55%,0) 46.9%,hsl(0,0%,65%) 47% 52.9%,hsla(0,0%,65%,0) 53%) 50% 50% / 99% 99% no-repeat;
+}
+
+/* Animations */
+@keyframes hamster {
+  from, to {
+    transform: rotate(4deg) translate(-0.8em,1.85em);
+  }
+
+  50% {
+    transform: rotate(0) translate(-0.8em,1.85em);
+  }
+}
+
+@keyframes hamsterHead {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(0);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes hamsterEye {
+  from, 90%, to {
+    transform: scaleY(1);
+  }
+
+  95% {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes hamsterEar {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(0);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(12deg);
+  }
+}
+
+@keyframes hamsterBody {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(0);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes hamsterFRLimb {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(50deg) translateZ(-1px);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(-30deg) translateZ(-1px);
+  }
+}
+
+@keyframes hamsterFLLimb {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(-30deg);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(50deg);
+  }
+}
+
+@keyframes hamsterBRLimb {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(-60deg) translateZ(-1px);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(20deg) translateZ(-1px);
+  }
+}
+
+@keyframes hamsterBLLimb {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(20deg);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(-60deg);
+  }
+}
+
+@keyframes hamsterTail {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(30deg) translateZ(-1px);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(10deg) translateZ(-1px);
+  }
+}
+
+@keyframes spoke {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-1turn);
+  }
+}
