@@ -4,111 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schopnosti - Ivo IT Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 50px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .skill-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+        }
+        .skill-card i {
+            font-size: 2.5rem;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+        .skill-card h3 {
+            margin: 0 0 15px;
+            font-size: 1.5rem;
+        }
+        .skill-bar {
+            background: #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+        }
+        .skill-progress {
+            height: 100%;
+            line-height: 20px;
+            color: #fff;
+            text-align: right;
+            padding-right: 10px;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+        .html { width: 100%; background: #e34c26; }
+        .css { width: 100%; background: #264de4; }
+        .php { width: 90%; background: #787cb5; }
+        .hosting { width: 100%; background: #28a745; }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Ivo<span class="accent">.</span></h2>
+    <div class="container">
+        <h1 class="section-title">Moje Schopnosti</h1>
+        <p class="section-subtitle">Hlavné oblasti, kde excelujem</p>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress html">100%</div>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Domov</a></li>
-                <li class="nav-item"><a href="projekty.html" class="nav-link">Projekty</a></li>
-                <li class="nav-item"><a href="schopnosti.html" class="nav-link active">Schopnosti</a></li>
-                <li class="nav-item"><a href="certifikaty.html" class="nav-link">Certifikáty</a></li>
-                <li class="nav-item"><a href="referencie.html" class="nav-link">Referencie</a></li>
-                <li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress css">100%</div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-php"></i>
+                <h3>PHP</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress php">90%</div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Administrácia hostingu</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress hosting">100%</div>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <main style="padding-top: 70px;">
-        <section class="skills">
-            <div class="container">
-                <div class="section-header">
-                    <h1 class="section-title">Moje Schopnosti</h1>
-                    <p class="section-subtitle">Čomu sa realne venujem</p>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Členské sekcie & Predplatné</h3>
-                        <p>Správa a tvorba členských sekcií a predplatného priamo vo vašom WordPress projekte.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>Riešenia na mieru</h3>
-                        <p>Komplexné riešenia na mieru pre WordPress weby, e-shopy vo WooCommerce a weby podľa vašich požiadaviek.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>IT Správa</h3>
-                        <p>Dostupnosť od skorého rána do noci, kompletná správa vašich webov a e-shopov.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h3>IT Podpora pre zákazníkov</h3>
-                        <p>Dostupná prakticky celý deň, riešenie problémov a otázok vašich zákazníkov promptne.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Ivo<span class="accent">.</span></h3>
-                    <p>IT Správca & Web Developer</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/ivanrafaelis" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/ivo.rafaelis" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="mailto:rafaelis1@gymzh.sk" class="social-link"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Navigácia</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Domov</a></li>
-                        <li><a href="projekty.html">Projekty</a></li>
-                        <li><a href="schopnosti.html">Schopnosti</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Kontakt</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-envelope"></i> rafaelis1@gymzh.sk</li>
-                        <li><i class="fab fa-whatsapp"></i> +421 915 614 338</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Žiar nad Hronom, Slovensko</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Ivo. Všetky práva vyhradené.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>
