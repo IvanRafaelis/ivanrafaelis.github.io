@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekty - Ivo IT Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Ivo<span class="accent">.</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Domov</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projekty.html" class="nav-link active">Projekty</a>
+                </li>
+                <li class="nav-item">
+                    <a href="schopnosti.html" class="nav-link">Schopnosti</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certifikaty.html" class="nav-link">Certifikáty</a>
+                </li>
+                <li class="nav-item">
+                    <a href="referencie.html" class="nav-link">Referencie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 70px;">
+        <section class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Moje Projekty</h1>
+                    <p class="section-subtitle">Prehľad úspešne realizovaných IT projektov a riešení</p>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Všetky</button>
+                    <button class="filter-btn" data-filter="infrastructure">Infraštruktúra</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud</button>
+                    <button class="filter-btn" data-filter="security">Bezpečnosť</button>
+                    <button class="filter-btn" data-filter="automation">Automatizácia</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-category="infrastructure">
+                        <div class="project-image">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Modernizácia Serverovej Infraštruktúry</h3>
+                            <p class="project-description">
+                                Kompletná modernizácia serverovej infraštruktúry pre stredne veľkú firmu. 
+                                Migrácia z legacy systémov na moderné virtualizované prostredie s vysokou dostupnosťou.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">VMware vSphere</span>
+                                <span class="tech-tag">Windows Server 2022</span>
+                                <span class="tech-tag">Linux</span>
+                                <span class="tech-tag">SAN Storage</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="cloud">
+                        <div class="project-image">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Migrácia do AWS Cloud</h3>
+                            <p class="project-description">
+                                Úspešná migrácia kritických aplikácií a databáz do AWS cloudu s optimalizáciou 
+                                nákladov a zvýšením škálovateľnosti o 300%.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">AWS EC2</span>
+                                <span class="tech-tag">RDS</span>
+                                <span class="tech-tag">CloudFormation</span>
+                                <span class="tech-tag">Lambda</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="security">
+                        <div class="project-image">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Implementácia Zero Trust Security</h3>
+                            <p class="project-description">
+                                Návrh a implementácia Zero Trust bezpečnostnej architektúry s multi-faktorovou 
+                                autentifikáciou a pokročilým monitoringom hrozieb.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Azure AD</span>
+                                <span class="tech-tag">Conditional Access</span>
+                                <span class="tech-tag">SIEM</span>
+                                <span class="tech-tag">MFA</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="automation">
+                        <div class="project-image">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">DevOps Pipeline Automatizácia</h3>
+                            <p class="project-description">
+                                Vytvorenie kompletného CI/CD pipeline s automatizovaným testovaním, 
+                                deploymentom a monitoringom pre vývojový tím 20+ ľudí.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Jenkins</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">Ansible</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Detail
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="infrastructure">
+                        <div class="project-image">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sieťová Infraštruktúra Enterprise</h3>
+                            <p class="project-description">
+                                Návrh a implementácia komplexnej sieťovej infraštruktúry pre korporátne 
+                                prostredie s redundanciou a vysokou dostupnosťou 99.9%.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Cisco</span>
+                                <span class="tech-tag">VLAN</span>
+                                <span class="tech-tag">BGP</span>
+                                <span class="tech-tag">MPLS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="cloud">
+                        <div class="project-image">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Hybrid Cloud Databázové Riešenie</h3>
+                            <p class="project-description">
+                                Implementácia hybrid cloud databázového riešenia s automatickým zálohovaniem 
+                                a disaster recovery plánom pre kritické business aplikácie.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">Azure SQL</span>
+                                <span class="tech-tag">Always On</span>
+                                <span class="tech-tag">PowerShell</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ivo<span class="accent">.</span></h3>
+                    <p>IT Správca & Systémový Architekt</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigácia</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Domov</a></li>
+                        <li><a href="projekty.html">Projekty</a></li>
+                        <li><a href="schopnosti.html">Schopnosti</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> ivo@example.com</li>
+                        <li><i class="fas fa-phone"></i> +421 XXX XXX XXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bratislava, SK</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ivo. Všetky práva vyhradené.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
