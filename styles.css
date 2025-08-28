@@ -287,62 +287,7 @@ section {
   font-weight: 500;
 }
 
-/* Services Section */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.service-card {
-  background: var(--bg-primary);
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-md);
-  text-align: center;
-  border: 1px solid var(--border-color);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
-}
-
-.service-icon {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover .service-icon {
-  transform: rotate(8deg) scale(1.05);
-}
-
-.service-icon i {
-  font-size: 2rem;
-  color: #fff;
-}
-
-.service-card h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 1rem;
-}
-
-.service-card p {
-  color: var(--text-secondary);
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
+/* Services Section */ .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; } .service-card { background: var(--bg-primary); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow-md); text-align: center; transition: var(--transition); border: 1px solid var(--border-color); } .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); } .service-icon { width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; } .service-icon i { font-size: 2rem; color: white; } .service-card h3 { font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem; } .service-card p { color: var(--text-secondary); line-height: 1.6; }
 
 
 /* Skills Page Specific */
