@@ -132,45 +132,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 })
 
-// Contact form handling
-const contactForm = document.querySelector(".contact-form form")
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault()
-
-    // Get form data
-    const formData = new FormData(contactForm)
-    const name = formData.get("name")
-    const email = formData.get("email")
-    const message = formData.get("message")
-
-    // Simple validation
-    if (!name || !email || !message) {
-      alert("Prosím vyplňte všetky polia.")
-      return
-    }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(email)) {
-      alert("Prosím zadajte platnú emailovú adresu.")
-      return
-    }
-
-    // Simulate form submission
-    const submitBtn = contactForm.querySelector(".btn-primary")
-    const originalText = submitBtn.innerHTML
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Odosielam...'
-    submitBtn.disabled = true
-
-    setTimeout(() => {
-      alert("Správa bola úspešne odoslaná! Odpoviem vám čo najskôr.")
-      contactForm.reset()
-      submitBtn.innerHTML = originalText
-      submitBtn.disabled = false
-    }, 2000)
-  })
-}
 
 // Add loading animation to external links
 document.querySelectorAll('a[href^="http"]').forEach((link) => {
