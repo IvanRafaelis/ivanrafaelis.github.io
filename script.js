@@ -75,43 +75,45 @@ const animateSkillBars = () => {
   })
 }
 
-// Project filtering
-const filterProjects = (category) => {
-  const projects = document.querySelectorAll(".project-card")
+// Article filtering
+const filterArticles = (category) => {
+  const articles = document.querySelectorAll(".article-card")
   const filterBtns = document.querySelectorAll(".filter-btn")
 
   // Update active filter button
   filterBtns.forEach((btn) => btn.classList.remove("active"))
   document.querySelector(`[data-filter="${category}"]`).classList.add("active")
 
-  // Filter projects
-  projects.forEach((project) => {
-    const projectCategory = project.getAttribute("data-category")
-    if (category === "all" || projectCategory === category) {
-      project.style.display = "block"
+  // Filter articles
+  articles.forEach((article) => {
+    const articleCategory = article.getAttribute("data-category")
+    if (category === "all" || articleCategory === category) {
+      article.style.display = "block"
       setTimeout(() => {
-        project.style.opacity = "1"
-        project.style.transform = "translateY(0)"
+        article.style.opacity = "1"
+        article.style.transform = "translateY(0)"
       }, 100)
     } else {
-      project.style.opacity = "0"
-      project.style.transform = "translateY(20px)"
+      article.style.opacity = "0"
+      article.style.transform = "translateY(20px)"
       setTimeout(() => {
-        project.style.display = "none"
+        article.style.display = "none"
       }, 300)
     }
   })
 }
 
-// Initialize project filters
+// Initialize article filters
 document.addEventListener("DOMContentLoaded", () => {
   const filterBtns = document.querySelectorAll(".filter-btn")
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const filter = btn.getAttribute("data-filter")
-      filterProjects(filter)
+      filterArticles(filter)
     })
   })
+})
+
 
   // Animate skill bars when skills section is visible
   const skillsSection = document.querySelector(".skills")
