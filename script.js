@@ -59,54 +59,45 @@ const observer = new IntersectionObserver((entries) => {
   })
 }, observerOptions)
 
-// Observe all elements with fade-in class
-document.querySelectorAll(".fade-in").forEach((el) => {
-  observer.observe(el)
-})
+document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el))
 
 // Skills progress bar animation
 const animateSkillBars = () => {
-  const skillBars = document.querySelectorAll(".skill-progress")
-  skillBars.forEach((bar) => {
+  document.querySelectorAll(".skill-progress").forEach((bar) => {
     const progress = bar.getAttribute("data-progress")
-    if (progress) {
-      bar.style.width = progress + "%"
-    }
+    if (progress) bar.style.width = progress + "%"
   })
 }
 
 // Article filtering
-const filterArticles = (category) => {
-  const articles = document.querySelectorAll(".article-card")
-  const filterBtns = document.querySelectorAll(".filter-btn")
-
-  // Update active filter button
-  filterBtns.forEach((btn) => btn.classList.remove("active"))
-  document.querySelector(`[data-filter="${category}"]`).classList.add("active")
-
-  // Filter articles
-  articles.forEach((article) => {
-    const articleCategory = article.getAttribute("data-category")
-    if (category === "all" || articleCategory === category) {
-      article.style.display = "block"
-      setTimeout(() => {
-        article.style.opacity = "1"
-        article.style.transform = "translateY(0)"
-      }, 100)
-    } else {
-      article.style.opacity = "0"
-      article.style.transform = "translateY(20px)"
-      setTimeout(() => {
-        article.style.display = "none"
-      }, 300)
-    }
-  })
-}
-
-// DOMContentLoaded: initialize filters and skill bars
 document.addEventListener("DOMContentLoaded", () => {
-  // Article filter buttons
   const filterBtns = document.querySelectorAll(".filter-btn")
+  const articles = document.querySelectorAll(".article-card")
+
+  const filterArticles = (category) => {
+    filterBtns.forEach((btn) => btn.classList.remove("active"))
+    filterBtns.forEach((btn) => {
+      if (btn.getAttribute("data-filter") === category) btn.classList.add("active")
+    })
+
+    articles.forEach((article) => {
+      const articleCategory = article.getAttribute("data-category")
+      if (category === "all" || articleCategory === category) {
+        article.style.display = "block"
+        setTimeout(() => {
+          article.style.opacity = "1"
+          article.style.transform = "translateY(0)"
+        }, 50)
+      } else {
+        article.style.opacity = "0"
+        article.style.transform = "translateY(20px)"
+        setTimeout(() => {
+          article.style.display = "none"
+        }, 300)
+      }
+    })
+  }
+
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const filter = btn.getAttribute("data-filter")
@@ -126,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         })
       },
-      { threshold: 0.5 },
+      { threshold: 0.5 }
     )
     skillsObserver.observe(skillsSection)
   }
@@ -134,26 +125,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // External links animation
 document.querySelectorAll('a[href^="http"]').forEach((link) => {
-  link.addEventListener("click", (e) => {
+  link.addEventListener("click", () => {
     if (link.target === "_blank") {
       link.style.opacity = "0.7"
-      setTimeout(() => { link.style.opacity = "1" }, 200)
+      setTimeout(() => (link.style.opacity = "1"), 200)
     }
   })
 })
 
 // Keyboard navigation support
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    // Close mobile menu on escape
-    if (navMenu && navMenu.classList.contains("active")) {
-      hamburger.classList.remove("active")
-      navMenu.classList.remove("active")
-    }
+  if (e.key === "Escape" && navMenu && navMenu.classList.contains("active")) {
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
   }
 })
 
-// Performance optimization: Lazy load images
+// Lazy load images
 const lazyImages = document.querySelectorAll("img[data-src]")
 const imageObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -165,11 +153,12 @@ const imageObserver = new IntersectionObserver((entries) => {
     }
   })
 })
-
 lazyImages.forEach((img) => imageObserver.observe(img))
 
-// Add smooth reveal animation to cards
-const cards = document.querySelectorAll(".article-card, .service-card, .project-card, .certificate-card, .reference-card")
+// Smooth reveal animation for cards
+const cards = document.querySelectorAll(
+  ".article-card, .service-card, .project-card, .certificate-card, .reference-card"
+)
 cards.forEach((card, index) => {
   card.style.opacity = "0"
   card.style.transform = "translateY(30px)"
@@ -186,8 +175,7 @@ cards.forEach((card, index) => {
         }
       })
     },
-    { threshold: 0.1 },
+    { threshold: 0.1 }
   )
-
   cardObserver.observe(card)
 })
