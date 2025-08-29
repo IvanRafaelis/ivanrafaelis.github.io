@@ -16,34 +16,20 @@
                 <h2>Ivo<span class="accent">.</span></h2>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Domov</a>
-                </li>
-                <li class="nav-item">
-                    <a href="projekty.html" class="nav-link">Projekty</a>
-                </li>
-                <li class="nav-item">
-                    <a href="schopnosti.html" class="nav-link">Schopnosti</a>
-                </li>
-                <li class="nav-item">
-                    <a href="certifikaty.html" class="nav-link">Certifikáty</a>
-                </li>
-                <li class="nav-item">
-                    <a href="referencie.html" class="nav-link">Referencie</a>
-                </li>
-                <li class="nav-item">
-                    <a href="kontakt.html" class="nav-link active">Kontakt</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Domov</a></li>
+                <li class="nav-item"><a href="projekty.html" class="nav-link">Projekty</a></li>
+                <li class="nav-item"><a href="schopnosti.html" class="nav-link">Schopnosti</a></li>
+                <li class="nav-item"><a href="certifikaty.html" class="nav-link">Certifikáty</a></li>
+                <li class="nav-item"><a href="referencie.html" class="nav-link">Referencie</a></li>
+                <li class="nav-item"><a href="kontakt.html" class="nav-link active">Kontakt</a></li>
             </ul>
             <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
             </div>
         </div>
     </nav>
 
-    <!-- Updated main structure to match other pages -->
+    <!-- Updated main structure -->
     <main style="padding-top: 70px;">
         <section class="contact">
             <div class="container">
@@ -58,171 +44,107 @@
                         <p>Som k dispozícii pre konzultácie, riešenie IT problémov a implementáciu nových riešení. Neváhajte ma kontaktovať.</p>
                         
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p>+421 915 614 338</p>
                             </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                             <div class="contact-details">
                                 <h4>Email</h4>
-                                <p>ivo@example.com</p>
+                                <p>rafaelis1@gymzh.sk</p>
                             </div>
                         </div>
 
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Telefón</h4>
-                                <p>+421 XXX XXX XXX</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="contact-details">
                                 <h4>Lokalita</h4>
-                                <p>Bratislava, Slovensko</p>
+                                <p>Žiar nad Hronom, Slovensko</p>
                             </div>
                         </div>
 
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
                             <div class="contact-details">
                                 <h4>Dostupnosť</h4>
-                                <p>Po - Pi: 8:00 - 18:00</p>
-                                <p>24/7 Emergency Support</p>
+                                <p>Každý deň: 6:00 - 22:00</p>
                             </div>
                         </div>
 
                         <div class="social-links mt-4">
                             <h4>Sledujte Ma</h4>
                             <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                <a href="https://www.linkedin.com/in/ivanrafaelis" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/ivo.rafaelis" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="mailto:rafaelis1@gymzh.sk" class="social-link"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="contact-form">
-                        <h2>Napíšte Mi</h2>
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Meno *</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
+<div class="contact-form">
+    <h2>Napíšte Mi</h2>
+    <form action="https://formspree.io/f/xandqweq" method="POST">
+        <div class="form-group">
+            <label for="name">Meno *</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Telefón</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="company">Spoločnosť</label>
+            <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+            <label for="service">Typ Služby</label>
+            <select id="service" name="service">
+                <option value="">Vyberte službu</option>
+                <option value="server-management">Správa Serverov</option>
+                <option value="cloud-solutions">Cloud Riešenia</option>
+                <option value="security-audit">Bezpečnostný Audit</option>
+                <option value="network-setup">Sieťové Riešenia</option>
+                <option value="database-management">Správa Databáz</option>
+                <option value="automation">Automatizácia</option>
+                <option value="consultation">Konzultácie</option>
+                <option value="other">Iné</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Správa *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Opíšte vaše požiadavky a potreby..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Odoslať Správu
+        </button>
+    </form>
+</div>
+</div>
+</div>
+</section>
+</main>
 
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="phone">Telefón</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
 
-                            <div class="form-group">
-                                <label for="company">Spoločnosť</label>
-                                <input type="text" id="company" name="company">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="service">Typ Služby</label>
-                                <select id="service" name="service">
-                                    <option value="">Vyberte službu</option>
-                                    <option value="server-management">Správa Serverov</option>
-                                    <option value="cloud-solutions">Cloud Riešenia</option>
-                                    <option value="security-audit">Bezpečnostný Audit</option>
-                                    <option value="network-setup">Sieťové Riešenia</option>
-                                    <option value="database-management">Správa Databáz</option>
-                                    <option value="automation">Automatizácia</option>
-                                    <option value="consultation">Konzultácie</option>
-                                    <option value="other">Iné</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Správa *</label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Opíšte vaše požiadavky a potreby..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane"></i>
-                                Odoslať Správu
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="section-header mt-4">
-                    <h2 class="section-title">Prečo Ma Kontaktovať?</h2>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h3>Rýchla Odozva</h3>
-                        <p>Odpoviem na vaše požiadavky do 24 hodín a poskytnem okamžitú podporu pri kritických problémoch.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h3>Bezplatná Konzultácia</h3>
-                        <p>Prvá konzultácia je vždy bezplatná. Prediskutujeme vaše potreby a navrhneme najlepšie riešenie.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Spoľahlivosť</h3>
-                        <p>8+ rokov skúseností a stovky spokojných klientov. Vaše IT problémy vyriešim efektívne a trvalo.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h3>Komplexné Riešenia</h3>
-                        <p>Od jednoduchých opráv po komplexné IT transformácie. Pokryjem všetky vaše technologické potreby.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <h3>Transparentné Ceny</h3>
-                        <p>Jasné cenové ponuky bez skrytých poplatkov. Vždy dostanete najlepší pomer cena/výkon.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h3>Dlhodobá Podpora</h3>
-                        <p>Neposkytujeme len riešenia, ale aj kontinuálnu podporu a údržbu vašej IT infraštruktúry.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Updated footer to match other pages -->
+    <!-- New footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Ivo<span class="accent">.</span></h3>
-                    <p>IT Správca & Systémový Architekt</p>
+                    <p>IT Správca & Web Developer</p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/ivanrafaelis" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ivo.rafaelis" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:rafaelis1@gymzh.sk" class="social-link"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -237,14 +159,14 @@
                 <div class="footer-section">
                     <h4>Kontakt</h4>
                     <ul class="footer-links">
-                        <li><i class="fas fa-envelope"></i> ivo@example.com</li>
-                        <li><i class="fas fa-phone"></i> +421 XXX XXX XXX</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Bratislava, SK</li>
+                        <li><i class="fas fa-envelope"></i> rafaelis1@gymzh.sk</li>
+                        <li><i class="fab fa-whatsapp"></i> +421 915 614 338</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Žiar nad Hronom, Slovensko</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Ivo. Všetky práva vyhradené.</p>
+                <p>&copy; 2025 Ivo. Všetky práva vyhradené.</p>
             </div>
         </div>
     </footer>
