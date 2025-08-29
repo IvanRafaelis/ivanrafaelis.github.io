@@ -103,8 +103,9 @@ const filterArticles = (category) => {
   })
 }
 
-// Initialize article filters
+// DOMContentLoaded: initialize filters and skill bars
 document.addEventListener("DOMContentLoaded", () => {
+  // Article filter buttons
   const filterBtns = document.querySelectorAll(".filter-btn")
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -112,8 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
       filterArticles(filter)
     })
   })
-})
-
 
   // Animate skill bars when skills section is visible
   const skillsSection = document.querySelector(".skills")
@@ -129,22 +128,19 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       { threshold: 0.5 },
     )
-
     skillsObserver.observe(skillsSection)
   }
 })
 
-
-// Add loading animation to external links
+// External links animation
 document.querySelectorAll('a[href^="http"]').forEach((link) => {
   link.addEventListener("click", (e) => {
     if (link.target === "_blank") {
       link.style.opacity = "0.7"
-      setTimeout(() => {
-        link.style.opacity = "1"
-      }, 200)
+      setTimeout(() => { link.style.opacity = "1" }, 200)
     }
   })
+})
 
 // Keyboard navigation support
 document.addEventListener("keydown", (e) => {
@@ -173,7 +169,7 @@ const imageObserver = new IntersectionObserver((entries) => {
 lazyImages.forEach((img) => imageObserver.observe(img))
 
 // Add smooth reveal animation to cards
-const cards = document.querySelectorAll(".service-card, .project-card, .certificate-card, .reference-card")
+const cards = document.querySelectorAll(".article-card, .service-card, .project-card, .certificate-card, .reference-card")
 cards.forEach((card, index) => {
   card.style.opacity = "0"
   card.style.transform = "translateY(30px)"
