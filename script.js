@@ -145,7 +145,6 @@ document.querySelectorAll('a[href^="http"]').forEach((link) => {
       }, 200)
     }
   })
-})
 
 // Keyboard navigation support
 document.addEventListener("keydown", (e) => {
