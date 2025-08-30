@@ -27,23 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (selectedCategory === "all" || cardCategory === selectedCategory) {
           card.style.display = "block"
-          card.style.opacity = "0"
-          setTimeout(() => {
-            card.style.opacity = "1"
-          }, 50)
         } else {
           card.style.display = "none"
         }
       })
     })
   })
-
-  // Add smooth transition styles
-  const style = document.createElement("style")
-  style.textContent = `
-        .article-card {
-            transition: opacity 0.3s ease-in-out;
-        }
-    `
-  document.head.appendChild(style)
 })
