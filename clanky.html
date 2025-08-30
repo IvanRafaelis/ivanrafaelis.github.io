@@ -46,153 +46,90 @@
         </div>
     </nav>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1 class="page-title">Moje Články</h1>
-                <p class="page-subtitle">Poznatky a skúsenosti z IT sveta</p>
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Moje Články</h1>
+            <p class="page-subtitle">Poznatky a skúsenosti z IT sveta</p>
+        </div>
+    </section>
+
+    <section class="articles">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">Všetky</button>
+                <button class="filter-btn" data-category="veda-technika">Veda a technika</button>
+                <button class="filter-btn" data-category="geografia">Geografia</button>
+                <button class="filter-btn" data-category="zaujimavosti">Zaujímavosti</button>
             </div>
-        </section>
 
-        <section class="articles">
-            <div class="container">
-                <div class="filter-tabs">
-                    <button class="filter-btn active" data-category="all">Všetky</button>
-                    <button class="filter-btn" data-category="veda-technika">Veda a technika</button>
-                    <button class="filter-btn" data-category="geografia">Geografia</button>
-                    <button class="filter-btn" data-category="zaujimavosti">Zaujímavosti</button>
-                </div>
+            <div class="articles-grid">
+                <article class="article-card" data-category="veda-technika">
+                    <div class="article-image">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category">Veda a technika</span>
+                            <span class="date">15. December 2024</span>
+                        </div>
+                        <h3 class="article-title">
+                            <a href="clanok-kvantove-pocitace.html">Kvantové počítače: Budúcnosť výpočtovej techniky</a>
+                        </h3>
+                        <p class="article-excerpt">
+                            Preskúmanie revolučnej technológie kvantových počítačov a ich potenciálneho vplyvu na IT infraštruktúru...
+                        </p>
+                        <a href="clanok-kvantove-pocitace.html" class="read-more">
+                            Čítať viac <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
 
-                <div class="articles-grid">
-                    <article class="article-card" data-category="veda-technika">
-                        <div class="article-image">
-                            <i class="fas fa-microchip"></i>
+                <article class="article-card" data-category="geografia">
+                    <div class="article-image">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category">Geografia</span>
+                            <span class="date">10. December 2024</span>
                         </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category">Veda a technika</span>
-                                <span class="date">15. December 2024</span>
-                            </div>
-                            <h3 class="article-title">
-                                <a href="clanok-kvantove-pocitace.html">Kvantové počítače: Budúcnosť výpočtovej techniky</a>
-                            </h3>
-                            <p class="article-excerpt">
-                                Preskúmanie revolučnej technológie kvantových počítačov a ich potenciálneho vplyvu na IT infraštruktúru...
-                            </p>
-                            <a href="clanok-kvantove-pocitace.html" class="read-more">
-                                Čítať viac <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </article>
+                        <h3 class="article-title">
+                            <a href="clanok-datacenter-lokalizacia.html">Geografická lokalizácia dátových centier</a>
+                        </h3>
+                        <p class="article-excerpt">
+                            Ako geografia ovplyvňuje výber lokality pre dátové centrá a aký má to vplyv na výkon aplikácií...
+                        </p>
+                        <a href="clanok-datacenter-lokalizacia.html" class="read-more">
+                            Čítať viac <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
 
-                    <article class="article-card" data-category="geografia">
-                        <div class="article-image">
-                            <i class="fas fa-globe-americas"></i>
+                <article class="article-card" data-category="zaujimavosti">
+                    <div class="article-image">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category">Zaujímavosti</span>
+                            <span class="date">5. December 2024</span>
                         </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category">Geografia</span>
-                                <span class="date">10. December 2024</span>
-                            </div>
-                            <h3 class="article-title">
-                                <a href="clanok-datacenter-lokalizacia.html">Geografická lokalizácia dátových centier</a>
-                            </h3>
-                            <p class="article-excerpt">
-                                Ako geografia ovplyvňuje výber lokality pre dátové centrá a aký má to vplyv na výkon aplikácií...
-                            </p>
-                            <a href="clanok-datacenter-lokalizacia.html" class="read-more">
-                                Čítať viac <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="article-card" data-category="zaujimavosti">
-                        <div class="article-image">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category">Zaujímavosti</span>
-                                <span class="date">5. December 2024</span>
-                            </div>
-                            <h3 class="article-title">
-                                <a href="clanok-it-zaujimavosti.html">10 fascinujúcich faktov o IT svete</a>
-                            </h3>
-                            <p class="article-excerpt">
-                                Zaujímavé fakty a kuriozity z histórie informatiky, ktoré možno nepoznáte...
-                            </p>
-                            <a href="clanok-it-zaujimavosti.html" class="read-more">
-                                Čítať viac <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="article-card" data-category="veda-technika">
-                        <div class="article-image">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category">Veda a technika</span>
-                                <span class="date">1. December 2024</span>
-                            </div>
-                            <h3 class="article-title">
-                                <a href="clanok-ai-infrastruktura.html">AI a jej vplyv na IT infraštruktúru</a>
-                            </h3>
-                            <p class="article-excerpt">
-                                Ako umelá inteligencia mení požiadavky na IT infraštruktúru a čo to znamená pre správcov...
-                            </p>
-                            <a href="clanok-ai-infrastruktura.html" class="read-more">
-                                Čítať viac <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="article-card" data-category="geografia">
-                        <div class="article-image">
-                            <i class="fas fa-satellite"></i>
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category">Geografia</span>
-                                <span class="date">28. November 2024</span>
-                            </div>
-                            <h3 class="article-title">
-                                <a href="clanok-satelitny-internet.html">Satelitný internet: Globálna konektivita</a>
-                            </h3>
-                            <p class="article-excerpt">
-                                Ako satelitné technológie prekonávajú geografické bariéry a prinášajú internet do vzdialených oblastí...
-                            </p>
-                            <a href="clanok-satelitny-internet.html" class="read-more">
-                                Čítať viac <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="article-card" data-category="zaujimavosti">
-                        <div class="article-image">
-                            <i class="fas fa-history"></i>
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category">Zaujímavosti</span>
-                                <span class="date">25. November 2024</span>
-                            </div>
-                            <h3 class="article-title">
-                                <a href="clanok-historia-internetu.html">Neznáme príbehy z histórie internetu</a>
-                            </h3>
-                            <p class="article-excerpt">
-                                Fascinujúce príbehy a anekdoty z počiatkov internetu, ktoré formovali dnešný digitálny svet...
-                            </p>
-                            <a href="clanok-historia-internetu.html" class="read-more">
-                                Čítať viac <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </article>
-                </div>
+                        <h3 class="article-title">
+                            <a href="clanok-it-zaujimavosti.html">10 fascinujúcich faktov o IT svete</a>
+                        </h3>
+                        <p class="article-excerpt">
+                            Zaujímavé fakty a kuriozity z histórie informatiky, ktoré možno nepoznáte...
+                        </p>
+                        <a href="clanok-it-zaujimavosti.html" class="read-more">
+                            Čítať viac <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
 
     <footer class="footer">
         <div class="container">
