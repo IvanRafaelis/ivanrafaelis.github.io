@@ -179,3 +179,52 @@ cards.forEach((card, index) => {
   )
   cardObserver.observe(card)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Získaj modal a close button
+const modal = document.getElementById("contactModal");
+const closeBtn = document.querySelector(".close-button");
+
+// Zobraz modal pri načítaní stránky
+window.addEventListener('load', () => {
+    modal.style.display = "block";
+});
+
+// Zavri modal kliknutím na X
+closeBtn.addEventListener('click', () => {
+    modal.style.display = "none";
+});
+
+// Zavri modal kliknutím mimo modal content
+window.addEventListener('click', (e) => {
+    if(e.target == modal) {
+        modal.style.display = "none";
+    }
+});
+
