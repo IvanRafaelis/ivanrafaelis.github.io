@@ -1,35 +1,49 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Get all filter buttons and article cards
-  const filterButtons = document.querySelectorAll(".filter-btn")
-  const articleCards = document.querySelectorAll(".article-card")
+if (window.location.pathname.includes("clanky.html") || document.querySelector(".articles-page")) {
+  document.addEventListener("DOMContentLoaded", () => {
+    console.log("[v0] Articles filtering script loaded")
 
-  // Show all articles initially
-  articleCards.forEach((card) => {
-    card.style.display = "block"
-  })
+    // Get all filter buttons and article cards
+    const filterButtons = document.querySelectorAll(".filter-btn")
+    const articleCards = document.querySelectorAll(".article-card")
 
-  // Add click event to each filter button
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      // Remove active class from all buttons
-      filterButtons.forEach((btn) => btn.classList.remove("active"))
+    console.log("[v0] Found filter buttons:", filterButtons.length)
+    console.log("[v0] Found article cards:", articleCards.length)
 
-      // Add active class to clicked button
-      this.classList.add("active")
+    // Show all articles initially
+    articleCards.forEach((card) => {
+      card.style.display = "block"
+    })
 
-      // Get selected category
-      const category = this.getAttribute("data-category")
+    // Add click event to each filter button
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", function (e) {
+        e.preventDefault()
+        e.stopPropagation()
 
-      // Filter articles
-      articleCards.forEach((card) => {
-        const cardCategory = card.getAttribute("data-category")
+        console.log("[v0] Filter button clicked:", this.getAttribute("data-category"))
 
-        if (category === "all" || cardCategory === category) {
-          card.style.display = "block"
-        } else {
-          card.style.display = "none"
-        }
+        // Remove active class from all buttons
+        filterButtons.forEach((btn) => btn.classList.remove("active"))
+
+        // Add active class to clicked button
+        this.classList.add("active")
+
+        // Get selected category
+        const category = this.getAttribute("data-category")
+
+        // Filter articles
+        articleCards.forEach((card) => {
+          const cardCategory = card.getAttribute("data-category")
+
+          if (category === "all" || cardCategory === category) {
+            card.style.display = "block"
+            console.log("[v0] Showing article:", cardCategory)
+          } else {
+            card.style.display = "none"
+            console.log("[v0] Hiding article:", cardCategory)
+          }
+        })
       })
     })
   })
-})
+}
